@@ -1,7 +1,7 @@
 package pl.jaceksysiak.hibernate.demo.entity;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.SortedMap;
+import java.util.TreeMap;
 
 import javax.persistence.CollectionTable;
 import javax.persistence.Column;
@@ -32,9 +32,11 @@ public class Student {
 		
 	@ElementCollection
 	@CollectionTable(name="image")
-	@MapKeyColumn(name="file_name")
-	@Column(name="image_name")
-	private Map<String, String> images = new HashMap<String, String>();
+	@MapKeyColumn(name="file_name") //Maps Key
+	@Column(name="image_name") //Maps Value
+//	@OrderBy
+	//@SortComparator(ReverseStringComparator.class)
+	private SortedMap<String, String> images = new TreeMap<String, String>();
 	
 	
 	public Student(String firstName, String lastName, String email) {
@@ -75,13 +77,11 @@ public class Student {
 		this.email = email;
 	}
 
-
-
-	public Map<String, String> getImages() {
+	public SortedMap<String, String> getImages() {
 		return images;
 	}
 
-	public void setImages(Map<String, String> images) {
+	public void setImages(SortedMap<String, String> images) {
 		this.images = images;
 	}
 
