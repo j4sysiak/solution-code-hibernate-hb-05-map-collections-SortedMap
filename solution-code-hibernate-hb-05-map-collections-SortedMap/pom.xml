@@ -6,11 +6,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>pl.jaceksysiak</groupId>
-	<artifactId>solution-code-hibernate-hb-03-map-collections-map</artifactId>
+	<artifactId>solution-code-hibernate-hb-05-map-collections-SortedMap</artifactId>
 	<version>1.0</version>
 	<packaging>war</packaging>
 
-	<name>solution-code-hibernate-hb-03-map-collections-map</name>
+	<name>solution-code-hibernate-hb-05-map-collections-SortedMap</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
