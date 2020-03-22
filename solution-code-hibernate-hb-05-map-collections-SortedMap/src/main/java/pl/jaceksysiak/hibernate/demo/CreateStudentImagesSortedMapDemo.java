@@ -31,6 +31,9 @@ public class CreateStudentImagesSortedMapDemo {
 			theImages.put("photo1.jpg", "Photo 1");
 			theImages.put("photo2.jpg", "Photo 2");
 			theImages.put("photo3.jpg", "Photo 3");
+			theImages.put("photo1.jpg", "Photo 1");
+			theImages.put("photo2.jpg", "Photo 2");
+			theImages.put("photo3.jpg", "Photo 3");
 
 		//start a transaction
 			session.beginTransaction();
